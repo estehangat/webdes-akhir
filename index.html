@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="container">
+            <form method="post">
+                <table>
+                    <tr>
+                        <td>
+                            <h1>Welcome To</h1>
+                            <h1 class="judul">OpenBooks</h1>
+                            <br>
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Username</label>
+                            <br>
+                            <input id="username" type="text" name="username" placeholder="Username" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <br>
+                            <label>Password</label>
+                            <br>
+                            <input id="password" type="password" name="password" placeholder="Password" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <br>
+                            <button onclick="home(event)" id="login" type="submit">LOGIN</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="salah">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

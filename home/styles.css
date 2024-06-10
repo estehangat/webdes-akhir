@@ -1,0 +1,113 @@
+@font-face {
+    font-family: Mulish;
+    src: url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+}
+
+* {
+    font-family: Mulish;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.page-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('/assets/buku.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    background-color: #D9D9D9;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    height: 50px;
+    box-shadow: 0 4px 4px -4px black;
+    width: 100%;
+    top: 0;
+}
+
+.logo {
+    color: #880000;
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.navbar a {
+    color: #880000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 800;
+    margin-right: 30px;
+}
+
+.user {
+    display: flex;
+    border: 1px solid#880000;
+    background-color: #f9f9f9;
+    padding: 7px;
+    border-radius: 15px;
+}
+
+.user img {
+    height: 20px;
+}
+
+.container {
+    width: auto;
+    margin: 0 300px;
+}
+
+.hero {
+    padding-top: 15rem;
+
+    h2 {
+        font-size: 3rem;
+        color: #ffffff;
+        font-weight: 400;
+
+        span {
+            font-size: 3rem;
+            display: block;
+            color: #880000;
+            font-weight: 800;
+        }
+    }
+
+    p {
+        font-family: Mulish, sans-serif;
+        font-size: 1.2rem;
+        width: 400px;
+        color: rgb(220, 220, 220);
+    }
+
+    button {
+        background-color: #880000;
+        padding: 1rem 3rem;
+        border-radius: 2rem;
+        font-size: 1.3rem;
+        border: 0;
+        margin-top: 2.5rem;
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #d3d3d3;
+    margin-top: auto;
+}
