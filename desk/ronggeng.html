@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>link library</title>
+        <link rel="stylesheet" href="styles.css">
+        <script>
+            window.onload = function() {
+            if (sessionStorage.getItem('isLogin') !== 'true') {
+                window.location.href = '/index.html';
+            }
+        };
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <div class="navbar">
+                    <div class="logo"><a href="/home/index.html">OpenBooks</a></div>
+                    <div class="bar">
+                        <a href="/home/index.html">HOME</a>
+                        <a href="/library/index.html">LIBRARY</a>
+                        <a href="/about/index.html">ABOUT</a>
+                    </div>
+                    <div class="user">
+                        <img src="/assets/user.png">
+                        <a>HALO (User)</a>
+                        <a href="/index.html">LOGOUT</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="balik">
+            <a href="/library/index.html">< Back</a>
+        </div>
+        <div class="konten">
+            <div class="gambar">
+                <img src="/assets/ronggeng.jpg" class="buku">
+                <div class="tombol">
+                    <a href="https://perpus.sman5cirebon.sch.id/index.php?p=fstream&fid=106&bid=1149" class="baca" target="_blank"><img src="/assets/buku icon.png">Baca</a>
+                    <a href="https://shopee.co.id/Laskar-Pelangi-Edisi-Original-i.63842097.8485477050?sp_atk=5895d928-a53e-43a3-ae68-0a1bfc951f0d&xptdk=5895d928-a53e-43a3-ae68-0a1bfc951f0d" class="beli" target="_blank"><img src="/assets/cart.png">Link Beli</a>
+                </div>
+            </div>
+            <div class="tulisan">
+                <div class="judul">
+                    <h1>Ronggeng Dukuh Paruk</h1>
+                </div>
+                <div class="creator">
+                    <h3>Ahmad Tohari</h3>
+                </div>
+                <div class="isi">
+                    <h4>Detail Buku :</h4>
+                    <p>
+                        Judul: Ronggeng Dukuh Paruk<br>
+                        Genre: Fiksi, Romansa, Sejarah<br>
+                        Penulis: Ahmad Tohari<br>
+                        Penerbit: Gramedia Pustaka Utama<br>
+                        Penerjemah: -<br>
+                        Tahun Terbit: 1982<br>
+                        Jumlah Halaman: 406 halaman<br>
+                        <br>
+                    </p>
+                    <h4>Sinopsis :</h4>
+                    <p class="sinopsis">
+                        Ronggeng Dukuh Paruk yang ditulis oleh Ahmad Tohari pertama kali diterbitkan dalam bentuk trilogy dengan judul “Catatan Buat Emak”, “Lintang Kemukus Dini Hari”, dan “Jantera Bianglala”. Rongggeng Dukuh Paruk bisa disebut sebagai kisah cinta yang tragis. Ada yang menyebutnya sebagai karya penting tentang periode penting dalam sejarah Indonesia. Namun di atas semuanya, Ronggeng Dukuh Paruk adalah sebuah tragedi. <br><br>Novel bercerita mengenai Srintil, seorang gadis belia yang dinobatkan sebagai ronggeng bari di Dukuh Paruh. Dukuh Paruh, sebuah desa yang kecil, miskin, dan terpencil, mengganggap ronggong dalah lambing kehidupan desa. Namun, malapetaka politik yang terjadi di tahun 1965 membuat Dukuh Paruk hancur. Mereka terseret arus konflik politik dan divonis sebagai penghianat negara. Srintil mendapat perlakuan pengecualian karena kecantikannya. Terdapat keinginan Srintil untuk menata ulang kehidupannya setelah bebas dari tahanan para penguasa. Pertemuannya Kembali dengan teman lamanya, Rasus, memunculkan secercah harapan. Namun, masalah dalam hidupnya kian berdatangan menghancurkan jiwa Srintil. <br><br>Sebagai penulis, Ahmad Tohari menggambarkan suasana Dukuh Paruk dengan detail yang tampak sederhana. Pembaca seolah olah dibawa masuk ke dalam novel untuk melihat secara langsung bagaimana suasana Dukuh Paruk. Alur cerita disusun sedemikian rupa membuat pembaca mudah untuk mengikut alur cerita. Namun banyak terdapat diksi berbahasa jawa yang terselip pada narasi membuat pembaca yang tidak mengerti Bahasa Jawa kesulitan untuk memahami cerita. Buku Ronggeng Dukuh Paruk ini sangat direkomendasikan terutama jika kamu menginginkan bacaan yang berkualitas.<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2024 OpenBooks. All rights reserved.</p>
+        </footer>
+        <script>
+            function logout() {
+                sessionStorage.setItem('isLogin', 'false');
+                window.location.href = '/index.html';
+            }
+        </script>
+    </body>
+</html>

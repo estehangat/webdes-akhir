@@ -116,9 +116,18 @@ h2 {
     line-height: 1.5;
 }
 
+.pesan {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 90px;
+    margin-right: 90px;
+    padding: 20px;
+}
+
 .footer {
     text-align: center;
     padding: 10px;
     background-color: #d3d3d3;
-    margin-top: 5em;
+    margin-top: 2em;
 }

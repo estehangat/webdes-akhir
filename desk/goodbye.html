@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>link library</title>
+        <link rel="stylesheet" href="styles.css">
+        <script>
+            window.onload = function() {
+            if (sessionStorage.getItem('isLogin') !== 'true') {
+                window.location.href = '/index.html';
+            }
+        };
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <div class="navbar">
+                    <div class="logo"><a href="/home/index.html">OpenBooks</a></div>
+                    <div class="bar">
+                        <a href="/home/index.html">HOME</a>
+                        <a href="/library/index.html">LIBRARY</a>
+                        <a href="/about/index.html">ABOUT</a>
+                    </div>
+                    <div class="user">
+                        <img src="/assets/user.png">
+                        <a>HALO (User)</a>
+                        <a href="/index.html">LOGOUT</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="balik">
+            <a href="/library/index.html">< Back</a>
+        </div>
+        <div class="konten">
+            <div class="gambar">
+                <img src="/assets/goodbye.jpg" class="buku">
+                <div class="tombol">
+                    <a href="https://ebook.bungatujuh.sch.id/index.php?p=fstream&fid=299&bid=289" class="baca" target="_blank"><img src="/assets/buku icon.png">Baca</a>
+                    <a href="https://shopee.co.id/Goodbye-Things-Hidup-Minimalis-ala-Orang-Jepang-(Fumio-Sasaki)-i.63842097.2464107849?sp_atk=161e40d1-947f-4337-b514-20f048158276&xptdk=161e40d1-947f-4337-b514-20f048158276" class="beli" target="_blank"><img src="/assets/cart.png">Link Beli</a>
+                </div>
+            </div>
+            <div class="tulisan">
+                <div class="judul">
+                    <h1>Goodbye, Things</h1>
+                </div>
+                <div class="creator">
+                    <h3>Fumio Sasaki</h3>
+                </div>
+                <div class="isi">
+                    <h4>Detail Buku :</h4>
+                    <p>
+                        Judul: Goodbye, Things<br>
+                        Genre: Self Help, Psikologi<br>
+                        Penulis: Fumio Sasaki<br>
+                        Penerbit: Gramedia Pustaka Utama<br>
+                        Penerjemah: Annisa Cinantya Putri<br>
+                        Tahun Terbit: 2018<br>
+                        Jumlah Halaman: 284 halaman<br>
+                        <br>
+                    </p>
+                    <h4>Sinopsis :</h4>
+                    <p class="sinopsis">
+                        Buku Goodbye, Things: Hidup Minimalisir ala Orang Jepang ini berisi tentang pengalaman penulis, Fumio Sasaki yang pernah menjadi seorang maksimalis. Membandingkan dengan orang orang dengan kekayaan lebih membuatnya frustasi. Tidak banyak yang bisa dilakukan untuk mengubah keadaan. Akhirnya, dia lebih menikmati hidup minimalisnya. Buku Goodbye, Things: Hidup Minimalisir ala Orang Jepang ini berisi tentang pengalaman penulis, Fumio Sasaki yang pernah menjadi seorang maksimalis. Membandingkan dengan orang orang dengan kekayaan lebih membuatnya frustasi. Tidak banyak yang bisa dilakukan untuk mengubah keadaan. Akhirnya, dia lebih menikmati hidup minimalisnya. <br><br>Dalam buku ini, Sasaki berbagi kisah hidup minimalisirnya dan memberikan petunjuk tentang proses hidup minimalis. Melalu buku ini, pembaca ditunjukan bahwa minimalis tidak hanya mengubah ruangan atau rumah saja, tetapi benar benar meminimalisir hidup.  Pembaca akan diajak menyadari bagaimana pola atau gaya hidupnya. Ada barang apa saja Yang Ada disekitar kita? Apakah semuanya bermanfaat dan benar-benar kita butuhkan? Pertanyaan itu seolah-olah mengusik pemikiran pembaca saat menyelami buku ini. Buku Goodbye Things Hidup Minimalis Ala Orang Jepang juga memberi solusi dalam bentuk tips pemisahan dengan produk sampai imersi.<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2024 OpenBooks. All rights reserved.</p>
+        </footer>
+        <script>
+            function logout() {
+                sessionStorage.setItem('isLogin', 'false');
+                window.location.href = '/index.html';
+            }
+        </script>
+    </body>
+</html>

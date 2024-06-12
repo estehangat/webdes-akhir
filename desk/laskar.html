@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>link library</title>
+        <link rel="stylesheet" href="styles.css">
+        <script>
+            window.onload = function() {
+            if (sessionStorage.getItem('isLogin') !== 'true') {
+                window.location.href = '/index.html';
+            }
+        };
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <div class="navbar">
+                    <div class="logo"><a href="/home/index.html">OpenBooks</a></div>
+                    <div class="bar">
+                        <a href="/home/index.html">HOME</a>
+                        <a href="/library/index.html">LIBRARY</a>
+                        <a href="/about/index.html">ABOUT</a>
+                    </div>
+                    <div class="user">
+                        <img src="/assets/user.png">
+                        <a>HALO (User)</a>
+                        <a href="/index.html">LOGOUT</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="balik">
+            <a href="/library/index.html">< Back</a>
+        </div>
+        <div class="konten">
+            <div class="gambar">
+                <img src="/assets/laskar.jpg" class="buku">
+                <div class="tombol">
+                    <a href="https://perpus.sman5cirebon.sch.id/index.php?p=fstream&fid=106&bid=1149" class="baca" target="_blank"><img src="/assets/buku icon.png">Baca</a>
+                    <a href="https://shopee.co.id/Laskar-Pelangi-Edisi-Original-i.63842097.8485477050?sp_atk=5895d928-a53e-43a3-ae68-0a1bfc951f0d&xptdk=5895d928-a53e-43a3-ae68-0a1bfc951f0d" class="beli" target="_blank"><img src="/assets/cart.png">Link Beli</a>
+                </div>
+            </div>
+            <div class="tulisan">
+                <div class="judul">
+                    <h1>Laskar Pelangi</h1>
+                </div>
+                <div class="creator">
+                    <h3>Andrea Hirata</h3>
+                </div>
+                <div class="isi">
+                    <h4>Detail Buku :</h4>
+                    <p>
+                        Judul: Laskar Pelangi<br>
+                        Genre: Drama, Roman, Petualangan, Novel<br>
+                        Penulis: Andrea Hirata<br>
+                        Penerbit: Bentang Pustaka<br>
+                        Penerjemah: -<br>
+                        Tahun Terbit: 2005<br>
+                        Jumlah Halaman: -<br>
+                        <br>
+                    </p>
+                    <h4>Sinopsis :</h4>
+                    <p class="sinopsis">
+                        Laskar Pelangi, sebuah novel yang mengisahkan perjuangan anak anak untuk mendapatkan ilmu di kampung Gantung, Kepulauan Bangka Belitung. Buku ini menceritakan sebuah perjuangan masa depan dalam menggapai impian. sekolah yang terdampak dengan tambang dan perusahaan. penindasan dan kemiskinan yang kian menjadikan anak Bangka Belitung putus sekolah, lebih memilih bekerja membantu beban ekonomi keluarga. Sebuah perjuangan guru dalam mendidik murid yang minim. dengan tekat yang kuat dan keikhlasan Sd Muhammadiyah gantong Bangka Belitung kembali bangun untuk berdiri dan memberikan pendidikan kepada mereka yang ingin sekolah dengan keterbatasan. Kisah mereka dipenuhi dengan suka, duka, nestapa, dan tentu saja jenaka. Kisah ini menceritakan bagaimana ketulusan hati dan integritas seorang Pak Harfan dan Bu Mus berbuah manis, hingga anak-anak didik mereka menjadi orang-orang hebat. <br><br>Dari novel ini, banyak hal yang diajarkan kepada pembaca. Salah satunya adalah untuk tetap semangat dalam menempuh Pendidikan dan mencari ilmu. Dengan gaya Bahasa yang penuh dengan kiasan, cover yang menarik serta penataan cerita maupun kata yang bagus, novel ini menggaet pembaca dalam jangkauan yang sangat luas. Namun, terkadang pembaca terkadang harus berfikir panjang untuk menangkap ceritanya karena alur cerita meloncat dan pindah suasana. <br><br>Novel ini cocok dibaca oleh kalangan remaja. Pembaca yang ini menekuni literasi dapat menjadikan buku ini sebagai langkah awal.<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2024 OpenBooks. All rights reserved.</p>
+        </footer>
+        <script>
+            function logout() {
+                sessionStorage.setItem('isLogin', 'false');
+                window.location.href = '/index.html';
+            }
+        </script>
+    </body>
+</html>

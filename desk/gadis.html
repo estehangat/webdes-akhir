@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>link library</title>
+        <link rel="stylesheet" href="styles.css">
+        <script>
+            window.onload = function() {
+            if (sessionStorage.getItem('isLogin') !== 'true') {
+                window.location.href = '/index.html';
+            }
+        };
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <div class="navbar">
+                    <div class="logo"><a href="/home/index.html">OpenBooks</a></div>
+                    <div class="bar">
+                        <a href="/home/index.html">HOME</a>
+                        <a href="/library/index.html">LIBRARY</a>
+                        <a href="/about/index.html">ABOUT</a>
+                    </div>
+                    <div class="user">
+                        <img src="/assets/user.png">
+                        <a>HALO (User)</a>
+                        <a href="/index.html">LOGOUT</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="balik">
+            <a href="/library/index.html">< Back</a>
+        </div>
+        <div class="konten">
+            <div class="gambar">
+                <img src="/assets/gadis.jpg" class="buku">
+                <div class="tombol">
+                    <a href="https://fliphtml5.com/svwcm/dwgc/Gadis_Kretek/" class="baca" target="_blank"><img src="/assets/buku icon.png">Baca</a>
+                    <a href="https://shopee.co.id/Gadis-Kretek-(Ratih-Kumala)-i.63842097.2470555254?sp_atk=5e8979a9-1c7d-4db7-b0f4-77e3ad0a1582&xptdk=5e8979a9-1c7d-4db7-b0f4-77e3ad0a1582" class="beli" target="_blank"><img src="/assets/cart.png">Link Beli</a>
+                </div>
+            </div>
+            <div class="tulisan">
+                <div class="judul">
+                    <h1>Gadis Kretek</h1>
+                </div>
+                <div class="creator">
+                    <h3>Ratih Kumala</h3>
+                </div>
+                <div class="isi">
+                    <h4>Detail Buku :</h4>
+                    <p>
+                        Judul: Gadis Kretek<br>
+                        Genre: Fiksi, Sejarah, Romance<br>
+                        Penulis: Ratih Kumala<br>
+                        Penerbit: Gramedia Pustaka Utama<br>
+                        Penerjemah: -<br>
+                        Tahun Terbit: 2013<br>
+                        Jumlah Halaman: 288 halaman<br>
+                        <br>
+                    </p>
+                    <h4>Sinopsis :</h4>
+                    <p class="sinopsis">
+                        "Gadis Kretek" karya Ratih Kumala adalah novel yang mengisahkan perjalanan cinta, keluarga, dan sejarah industri kretek di Indonesia. Cerita dimulai dengan kondisi Soeraja, seorang pendiri perusahaan kretek terkemuka, yang sedang sakit keras. Dalam detik-detik terakhir hidupnya, ia menyebut nama seorang wanita, Jeng Yah, yang tidak dikenal oleh ketiga anaknya: Lebas, Karim, dan Tegar. <br><br>Anak-anak Soeraja pun memulai perjalanan untuk mengungkap siapa Jeng Yah dan hubungannya dengan ayah mereka. Penelusuran ini membawa mereka kembali ke masa lalu, mengungkap cerita cinta yang penuh liku antara Soeraja dan Jeng Yah, serta persaingan dalam industri kretek yang sedang berkembang. <br><br>Ratih Kumala dengan apik menggambarkan latar belakang sejarah industri kretek di Indonesia, serta kehidupan sosial dan budaya masyarakat Jawa di masa itu. "Gadis Kretek" tidak hanya menghadirkan kisah cinta yang mengharukan, tetapi juga menawarkan pandangan mendalam tentang dinamika keluarga, ambisi, dan perjuangan dalam membangun bisnis kretek yang melegenda.<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2024 OpenBooks. All rights reserved.</p>
+        </footer>
+        <script>
+            function logout() {
+                sessionStorage.setItem('isLogin', 'false');
+                window.location.href = '/index.html';
+            }
+        </script>
+    </body>
+</html>

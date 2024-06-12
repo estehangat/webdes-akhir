@@ -3,6 +3,13 @@
     <head>
         <title>OpenBook</title>
         <link rel="stylesheet" href="styles.css">
+        <script>
+            window.onload = function() {
+            if (sessionStorage.getItem('isLogin') !== 'true') {
+                window.location.href = '/index.html';
+            }
+        };
+        </script>
     </head>
     <body>
         <div class="navbar">
@@ -56,5 +63,11 @@
             </div>
         </div>
         <div class="footer"><p>&copy; 2024 OpenBooks. All rights reserved.</p></div>
+        <script>
+            function logout() {
+                sessionStorage.setItem('isLogin', 'false');
+                window.location.href = '/index.html';
+            }
+        </script>
     </body>
 </html>

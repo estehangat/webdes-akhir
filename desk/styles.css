@@ -159,6 +159,10 @@ body {
     margin-right: 1rem;
 }
 
+.sinopsis {
+    text-align: justify;
+}
+
 .tombol img {
     width: 23px;
     margin-right: 10px;

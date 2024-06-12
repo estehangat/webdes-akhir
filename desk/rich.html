@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>link library</title>
+        <link rel="stylesheet" href="styles.css">
+        <script>
+            window.onload = function() {
+            if (sessionStorage.getItem('isLogin') !== 'true') {
+                window.location.href = '/index.html';
+            }
+        };
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <div class="navbar">
+                    <div class="logo"><a href="/home/index.html">OpenBooks</a></div>
+                    <div class="bar">
+                        <a href="/home/index.html">HOME</a>
+                        <a href="/library/index.html">LIBRARY</a>
+                        <a href="/about/index.html">ABOUT</a>
+                    </div>
+                    <div class="user">
+                        <img src="/assets/user.png">
+                        <a>HALO (User)</a>
+                        <a href="/index.html">LOGOUT</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="balik">
+            <a href="/library/index.html">< Back</a>
+        </div>
+        <div class="konten">
+            <div class="gambar">
+                <img src="/assets/rich-poor.jpg" class="buku">
+                <div class="tombol">
+                    <a href="https://perpus.sman5cirebon.sch.id/index.php?p=fstream&fid=106&bid=1149" class="baca" target="_blank"><img src="/assets/buku icon.png">Baca</a>
+                    <a href="https://shopee.co.id/Laskar-Pelangi-Edisi-Original-i.63842097.8485477050?sp_atk=5895d928-a53e-43a3-ae68-0a1bfc951f0d&xptdk=5895d928-a53e-43a3-ae68-0a1bfc951f0d" class="beli" target="_blank"><img src="/assets/cart.png">Link Beli</a>
+                </div>
+            </div>
+            <div class="tulisan">
+                <div class="judul">
+                    <h1>Rich Dad Poor Dad</h1>
+                </div>
+                <div class="creator">
+                    <h3>Robert Kiyosaki</h3>
+                </div>
+                <div class="isi">
+                    <h4>Detail Buku :</h4>
+                    <p>
+                        Judul: Rich Dad Poor Dad<br>
+                        Genre: Personal finance, Non fiksi<br>
+                        Penulis: Robert Kiyosaki<br>
+                        Penerbit: Gramedia Pustaka Utama<br>
+                        Penerjemah: -<br>
+                        Tahun Terbit: 21 Agustus 2016<br>
+                        Jumlah Halaman: 244 halaman<br>
+                        <br>
+                    </p>
+                    <h4>Sinopsis :</h4>
+                    <p class="sinopsis">
+                        Buku Ini diawali dengan penjelasan asal mula kata “Rich Dad Poor Dad”. Disini Robert menjelaskan bahwa ia memiliki dua ayah. Ayah pertama adalah ayah kandungnya sendiri yang merupakan seseorang yang berpendidikan tinggi. Ia juga memiliki gelar Ph.D, dan melanjutkan studinya ke berbagai universitas dengan beasiswa penuh. Namun, ayah pertama ini harus berjuang untuk mendapatkan uang dan pada akhirnya hanya meninggalkan banyak hutang. Ayah pertamanya ini, disebut Robert sebagai "Poor Dad". Ayah keduanya adalah ayah dari temannya yang tidak lulus SMP. Namun, ia berhasil menjadi salah satu orang terkaya dan teah mnenyumbangkan uang hingga puluhan juta dolar bagi keluarganya dan demi amal kemanusiaan. Ayah kedua inilah yang Robert sebut "Rich Dad". Kedua ayah ini berperan sangat besar bagi Robert dalam membentuk pola pikirnya tentang uang. Nasihat dari kehadiran dua orang inilah yang Robert jadikan sandaran dalam melihat uang dari dua sudut pandang, yakni sudut pandang orang kaya dan sudut pandang orang miskin. Begitu banyak informasi dalam buku ini yang disajikan dengan bahasa yang ringan dan mudah dim negeri sehingga  membuat pembaca tidak bosan untuk membaca buku ini hingga selesai. Selain itu, buku ini memuat banyak dobrakan yang tidak pernah terpikirkan sebelumnya. <br><br>Buku ini menitikberatkan betapa pentingnya pendidikan finansial yang jarang diajarkan di sekolah-sekolah. Banyak Gagasan dalam buku ini yang dapat memberikan sudut pandang  bau kepada pembaca tentang uang yang tidak pernah terpikirkan sebelumnya.<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2024 OpenBooks. All rights reserved.</p>
+        </footer>
+        <script>
+            function logout() {
+                sessionStorage.setItem('isLogin', 'false');
+                window.location.href = '/index.html';
+            }
+        </script>
+    </body>
+</html>

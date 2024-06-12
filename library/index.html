@@ -3,6 +3,13 @@
     <head>
         <title>Library</title>
         <link rel="stylesheet" href="styles.css">
+        <script>
+            window.onload = function() {
+            if (sessionStorage.getItem('isLogin') !== 'true') {
+                window.location.href = '/index.html';
+            }
+        };
+        </script>
     </head>
     <body>
         <div class="header">
@@ -38,12 +45,12 @@
             <div class="rak">
                 <img src="/assets/bodo-amat.png" class="buku">
                 <div class="content">
-                    <h1>Sebuah Seni Untuk Bersikap Bodo Amat</h1>
+                    <h1>Sebuah Seni untuk Bersikap Bodo Amat</h1>
                     <h2>Mark Manson</h2>
                     <p>Selama beberapa tahun belakangan, Mark Manson—melalui blognya yang sangat populer—telah membantu mengoreksi harapan-harapan delusional kita, baik mengenai diri kita sendiri maupun dunia. Ia kini menuangkan buah pikirnya yang keren itu di dalam buku hebat ini. “Dalam hidup ini, kita hanya punya kepedulian dalam jumlah yang terbatas. Makanya, Anda harus bijaksana dalam menentukan kepedulian Anda.” Manson menciptakan momen perbincangan yang serius dan mendalam, dibungkus dengan cerita-cerita yang menghibur dan “kekinian”, serta humor yang cadas. Buku ini merupakan tamparan di wajah yang menyegarkan untuk kita semua, supaya kita bisa mulai menjalani kehidupan yang lebih memuaskan, dan apa adanya.
                         "</p>
                     <div class="buttons">
-                        <button type="button">Details Buku</button>
+                        <button type="button" onclick="window.location.href = '/desk/bodo.html'">Details Buku</button>
                     </div>
                 </div>
             </div>
@@ -56,11 +63,109 @@
                     <h2>Robert Kiyosaki</h2>
                     <p>Robert Kiyosaki telah menantang dan mengubah cara pikir puluhan juta orang di seluruh dunia tentang uang. Dengan perspektif yang kerap bertentangan dengan kebijaksanaan umum, Robert memiliki reputasi sebagai orang yang bicara secara apa adanya, tidak menganggap penting hal-hal yang umumnya dianggap serius, dan berani. Dia diakui di seluruh dunia sebagai orang yang berdedikasi dan peduli dengan pendidikan keuangan. Dalam buku ini, Robert Kiyosaki mencoba mengajarkan para pembaca untuk mulai saat ini melatih anak dan cucunya kelak, bahkan untuk dirinya sendiri agar cerdas dalam mengelola persoalan finansial. Selain itu, Robert juga menggarisbawahi bahwa orang kaya tidak bekerja hanya untuk uang, melainkan uang yang akan bekerja untuknya. Rich Dad Poor Dad—Buku Pengelolaan Keuangan Pribadi No. 1 Sepanjang Masa!</p>
                     <div class="buttons">
-                        <button type="button">Details Buku</button>
+                        <button type="button" onclick="window.location.href = '/desk/rich.html'">Details Buku</button>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="container">
+            <div class="rak">
+                <img src="/assets/ronggeng.jpg" class="buku">
+                <div class="content">
+                    <h1>Ronggeng Dukuh Paruk</h1>
+                    <h2>Ahmad Tohari</h2>
+                    <p>Ronggeng Dukuh Paruk adalah sebuah judul novel dari trilogi novel karya Ahmad Tohari yang merupakan novel pertama dari trilogi tersebut. Dua judul lainnya adalah Lintang Kemukus Dini Hari dan Jantera Bianglala. Novel ini–Ronggeng Dukuh Paruk, membuka ceritanya dengan mendeskripsikan suatu keadaan sebuah perkampungan di daerah Jawa. Memuat cerita kehidupan dan adat kebiasaan masyarakat di Dukuh Paruk, dukuh ini terletak pada sebuah wilayah di Jawa dengan kondisi memprihatinkan: terbelakang dan melarat, serta memiliki penduduk yang memelihara kebodohan dan rasa malas. Namun, pedukuhan ini memiliki suatu kebiasaan yang menjadi ciri khasnya, yaitu ronggeng.</p>
+                    <div class="buttons">
+                        <button type="button" onclick="window.location.href = '/desk/ronggeng.html'">Details Buku</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="rak">
+                <img src="/assets/laut.png" class="buku">
+                <div class="content">
+                    <h1>Laut Bercerita</h1>
+                    <h2>Leila S. Chudori</h2>
+                    <p>Buku ini terdiri atas dua bagian. Bagian pertama mengambil sudut pandang seorang mahasiswa aktivis bernama Laut, menceritakan bagaimana Laut dan kawan-kawannya menyusun rencana, berpindah-pindah dalam pelarian, hingga tertangkap oleh pasukan rahasia. Sedangkan bagian kedua dikisahkan oleh Asmara, adik Laut. Bagian kedua mewakili perasaan keluarga korban penghilangan paksa, bagaimana pencarian mereka terhadap kerabat mereka yang tak pernah kembali. Buku ini ditulis sebagai bentuk tribute bagi para aktivis yang diculik, yang kembali, dan yang tak kembali dan keluarga yang terus menerus sampai sekarang mencari-cari jawaban.</p>
+                    <div class="buttons">
+                        <button type="button" onclick="window.location.href = '/desk/laut.html'">Details Buku</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="rak">
+                <img src="/assets/educated.jpg" class="buku">
+                <div class="content">
+                    <h1>Educated</h1>
+                    <h2>Tara Westover</h2>
+                    <p>“Educated (Terdidik): Sebuah Memoar” merupakan buku autobiografi yang menceritakan kisah hidup Tara Westover. Cerita yang disuguhkan dalam buku ini akan menginspirasi pembaca.</p>
+                    <div class="buttons">
+                        <button type="button" onclick="window.location.href = '/desk/educated.html'">Details Buku</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="rak">
+                <img src="/assets/laskar.jpg" class="buku">
+                <div class="content">
+                    <h1>Laskar Pelangi</h1>
+                    <h2>Andrea Hirata</h2>
+                    <p>Laskar Pelangi adalah novel yang pertama kali diterbitkan oleh penulis kenamaan, Andrea Hirata. Tepatnya, novel ini berhasil dirilis pada tahun 2015 oleh Penerbit Bentang Pustaka. Dalam peradabannya, Andrea Hirata pun mengeluarkan tiga novel sekuel lanjutan dari Laskar Pelangi, di antaranya Sang Pemimpi, Edensor, dan Maryamah Karpov. Laskar Pelangi merupakan novel yang terinspirasi dari kisah nyata kehidupan Andrea Hirata selaku penulis yang mana saat itu dirinya bertempat tinggal di Desa Gantung, Kabupaten Gantung, Belitung Timur. Berkenaan dengan hal tersebut, mudah bagi si penulis merepresentasikan berbagai unsur sosial dan budaya masyarakat Belitung ke dalam bentuk cerita di novel Laskar Pelangi ini secara apik.</p>
+                    <div class="buttons">
+                        <button type="button" onclick="window.location.href = '/desk/laskar.html'">Details Buku</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="rak">
+                <img src="/assets/goodbye.jpg" class="buku">
+                <div class="content">
+                    <h1>Goodbye, Things</h1>
+                    <h2>Fumio Sasaki</h2>
+                    <p>Fumio Sasaki bukan ahli dalam hal minimalisme; ia hanya pria biasa yang mudah tertekan di tempat kerja, tidak percaya diri, dan terus menerus membandingkan diri dengan orang lain-sampai suatu hari, ia memutuskan untuk mengubah hidupnya dengan mengurangi barang yang ia miliki. Manfaat luar biasa langsung ia rasakan: tanoa semua "barangnya", Sasaki akhirnya merasakan kebebasan sejati, kedamaian pikiran, dan penghargaan terhadap momen saat ini. Sasaki memahami minimalisme sebagai "gaya hidup yang berarti kita mengurangi jumlah barang yang kita miliki sampai tingkat paling minimum." Di bukunya ia menjelaskan, di masa lalu orang Jepang hidup minimalis.</p>
+                    <div class="buttons">
+                        <button type="button" onclick="window.location.href = '/desk/goodbye.html'">Details Buku</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="rak">
+                <img src="/assets/filosofi.jpg" class="buku">
+                <div class="content">
+                    <h1>Filosofi Teras</h1>
+                    <h2>Henry Manampiring</h2>
+                    <p>Lebih dari 2.000 tahun lalu, sebuah mazhab filsafat menemukan akar masalah dan juga solusi dari banyak emosi negatif. Stoisisme, atau Filosofi Teras, adalah filsafat Yunani-Romawi kuno yang bisa membantu kita mengatasi emosi negatif dan menghasilkan mental yang tangguh dalam menghadapi naik-turunnya kehidupan. Jauh dari kesan filsafat sebagai topik berat dan mengawang-awang, Filosofi Teras justru bersifat praktis dan relevan dengan kehidupan Generasi Milenial dan Gen-Z masa kini.</p>
+                    <div class="buttons">
+                        <button type="button" onclick="window.location.href = '/desk/filosofi.html'">Details Buku</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="rak">
+                <img src="/assets/gadis.jpg" class="buku">
+                <div class="content">
+                    <h1>Gadis Kretek</h1>
+                    <h2>Ratih Kumala</h2>
+                    <p>Pak Raja sekarat. Dalam menanti ajal, ia memanggil satu nama perempuan yang bukan istrinya; Jeng Yah. Tiga anaknya, pewaris Kretek Djagad Raja, dimakan gundah. Sang ibu pun terbakar cemburu terlebih karena permintaan terakhir suaminya ingin bertemu Jeng Yah. Maka berpacu dengan malaikat maut, Lebas, Karim, dan Tegar, pergi ke pelosok Jawa untuk mencari Jeng Yah, sebelum ajal menjemput sang Ayah. Perjalanan itu bagai napak tilas bisnis dan rahasia keluarga. Lebas, Karim, dan Tegar bertemu dengan pelinting tua dan menguak asal-usul Kretek Djagad Raja hingga menjadi kretek nomor 1 di Indonesia. Lebih dari itu, ketiganya juga mengetahui kisah cinta ayah mereka dengar; Jeng Yah, yang ternyata adalah pemilik Kretek Gadis, kretek lokal Kota M yang terkenal pada zamannya. Apakah Lebas, Karim, dan Tegar akhirnya berhasil menemukan Jeng Yah?</p>
+                    <div class="buttons">
+                        <button type="button" onclick="window.location.href = '/desk/gadis.html'">Details Buku</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pesan"><h2>Segera hadir rekomendasi buku-buku lainnya!</h2></div>
         <div class="footer"><p>&copy; 2024 OpenBooks. All rights reserved.</p></div>
+        <script>
+            function logout() {
+                sessionStorage.setItem('isLogin', 'false');
+                window.location.href = '/index.html';
+            }
+        </script>
     </body>
 </html>

@@ -3,6 +3,13 @@
     <head>
         <title>home</title>
         <link rel="stylesheet" href="styles.css">
+        <script>
+            window.onload = function() {
+            if (sessionStorage.getItem('isLogin') !== 'true') {
+                window.location.href = '/index.html';
+            }
+        };
+        </script>
     </head>
     <body>
     <div class="page-wrapper">
@@ -17,7 +24,7 @@
                 <div class="user">
                     <img src="/assets/user.png">
                     <a>HALO (User)</a>
-                    <a href="/index.html">LOGOUT</a>
+                    <a href="#" onclick="logout()">LOGOUT</a>
                 </div>
             </div>
         </header>
@@ -33,5 +40,11 @@
     <footer>
         <p>&copy; 2024 OpenBooks. All rights reserved.</p>
     </footer>
+    <script>
+        function logout() {
+            sessionStorage.setItem('isLogin', 'false');
+            window.location.href = '/index.html';
+        }
+    </script>
     </body>
 </html>

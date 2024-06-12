@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>link library</title>
+        <link rel="stylesheet" href="styles.css">
+        <script>
+            window.onload = function() {
+            if (sessionStorage.getItem('isLogin') !== 'true') {
+                window.location.href = '/index.html';
+            }
+        };
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <div class="navbar">
+                    <div class="logo"><a href="/home/index.html">OpenBooks</a></div>
+                    <div class="bar">
+                        <a href="/home/index.html">HOME</a>
+                        <a href="/library/index.html">LIBRARY</a>
+                        <a href="/about/index.html">ABOUT</a>
+                    </div>
+                    <div class="user">
+                        <img src="/assets/user.png">
+                        <a>HALO (User)</a>
+                        <a href="/index.html">LOGOUT</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="balik">
+            <a href="/library/index.html">< Back</a>
+        </div>
+        <div class="konten">
+            <div class="gambar">
+                <img src="/assets/bodo-amat.png" class="buku">
+                <div class="tombol">
+                    <a href="https://anyflip.com/rjlnk/ahrc" class="baca" target="_blank"><img src="/assets/buku icon.png">Baca</a>
+                    <a href="https://shopee.co.id/Sebuah-Seni-untuk-Bersikap-Bodo-Amat-(edisi-handy)-i.63842097.14359067390?sp_atk=fdceffe5-821c-428f-90fc-406538954cfb&xptdk=fdceffe5-821c-428f-90fc-406538954cfb" class="beli" target="_blank"><img src="/assets/cart.png">Link Beli</a>
+                </div>
+            </div>
+            <div class="tulisan">
+                <div class="judul">
+                    <h1>Sebuah Seni untuk Bersikap Bodo Amat</h1>
+                </div>
+                <div class="creator">
+                    <h3>Mark Manson</h3>
+                </div>
+                <div class="isi">
+                    <h4>Detail Buku :</h4>
+                    <p>
+                        Judul: Sebuah Seni untuk Bersikap Bodo Amat<br>
+                        Genre: Self Improvement<br>
+                        Penulis: Mark Manson<br>
+                        Penerbit: Grasindo<br>
+                        Penerjemah: F. Wicakso<br>
+                        Tahun Terbit: 13 September 2016<br>
+                        Jumlah Halaman: 272 halaman<br>
+                        <br>
+                    </p>
+                    <h4>Sinopsis :</h4>
+                    <p class="sinopsis">
+                        Sebuah Seni untuk Bersikap Bodo Amat adalah sebuah karya menarik yang ditulis oleh Mark Manson. Buku ini menawarkan perspektif yang segar dan provokatif tentang cara kita melihat dan menghadapi hidup. Dalam buku ini, Mark Manson mengajak pembaca untuk melepaskan diri dari tekanan sosial dan norma-norma yang membatasi, dan mengadopsi sikap yang lebih santai dan tak peduli terhadap hal-hal yang tidak benar-benar penting. <br><br>Salah satu kelebihan utama buku Sebuah Seni untuk Bersikap Bodo Amat adalah pendekatannya yang provokatif terhadap kehidupan dan kebahagiaan. Dengan gaya penulisan yang lugas, tulus, dan humoris, Mark Manson mengajak pembaca untuk mempertanyakan norma-norma sosial dan mengeksplorasi pandangan yang berbeda tentang arti kehidupan. Pendekatannya yang kontroversial memancing pembaca untuk merenungkan ulang apa yang benar-benar penting dalam hidup. <br><br>Namun, pandangan-pandangan yang disampaikan oleh Mark Manson bisa jadi kontroversial bagi sebagian orang. Beberapa orang mungkin merasa bahwa buku ini terlalu “keras” dan tidak relevan dengan kehidupan mereka. Mark Manson terlalu permukaan dan tidak membahas secara mendalam konsep-konsep tersebut. Bagi mereka yang mencari pemahaman filosofis yang lebih mendalam atau analisis yang komprehensif, buku ini mungkin terasa sedikit kurang memuaskan.<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2024 OpenBooks. All rights reserved.</p>
+        </footer>
+        <script>
+            function logout() {
+                sessionStorage.setItem('isLogin', 'false');
+                window.location.href = '/index.html';
+            }
+        </script>
+    </body>
+</html>

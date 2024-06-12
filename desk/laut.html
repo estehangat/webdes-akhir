@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>link library</title>
+        <link rel="stylesheet" href="styles.css">
+        <script>
+            window.onload = function() {
+            if (sessionStorage.getItem('isLogin') !== 'true') {
+                window.location.href = '/index.html';
+            }
+        };
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <div class="navbar">
+                    <div class="logo"><a href="/home/index.html">OpenBooks</a></div>
+                    <div class="bar">
+                        <a href="/home/index.html">HOME</a>
+                        <a href="/library/index.html">LIBRARY</a>
+                        <a href="/about/index.html">ABOUT</a>
+                    </div>
+                    <div class="user">
+                        <img src="/assets/user.png">
+                        <a>HALO (User)</a>
+                        <a href="/index.html">LOGOUT</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="balik">
+            <a href="/library/index.html">< Back</a>
+        </div>
+        <div class="konten">
+            <div class="gambar">
+                <img src="/assets/laut.png" class="buku">
+                <div class="tombol">
+                    <a href="https://drive.google.com/file/d/1KS6d6C8N3-NnV-c22wbqfP5Fqj5dnYDu/view?usp=sharing" class="baca" target="_blank"><img src="/assets/buku icon.png">Baca</a>
+                    <a href="https://shopee.co.id/Laut-Bercerita-(Leila-S.-Chudori)-i.63842097.1569765359?sp_atk=5957a1f4-9039-41f1-a008-3698f5e82b33&xptdk=5957a1f4-9039-41f1-a008-3698f5e82b33" class="beli" target="_blank"><img src="/assets/cart.png">Link Beli</a>
+                </div>
+            </div>
+            <div class="tulisan">
+                <div class="judul">
+                    <h1>Laut Bercerita</h1>
+                </div>
+                <div class="creator">
+                    <h3>Leila S. Chudori</h3>
+                </div>
+                <div class="isi">
+                    <h4>Detail Buku :</h4>
+                    <p>
+                        Judul: Laut Bercerita<br>
+                        Genre: Fiksi <br>
+                        Penulis: Leila S. Chudori<br>
+                        Penerbit: Kepustakaan Populer Gramedia<br>
+                        Penerjemah: - <br>
+                        Tahun Terbit: 2017 <br>
+                        Jumlah Halaman: 394 halaman <br>
+                        <br>
+                    </p>
+                    <h4>Sinopsis :</h4>
+                    <p class="sinopsis">
+                        Laut Bercerita, novel karya Leila S. Chudori, bertutur tentang kisah keluarga yang kehilangan, sekumpulan sahabat yang merasakan kekosongan di dada, sekelompok orang yang gemar menyiksa dan lancar berkhianat, sejumlah keluarga yang mencari kejelasan akan anaknya, dan tentang cinta yang tak akan luntur. <br><br>Novel setebal 394 halaman ini, menceritakan terkait perilaku kekejaman dan kebengisan yang dirasakan oleh kelompok aktivis mahasiswa di masa Orde Baru. Tidak hanya itu, novel ini pun merenungkan kembali akan hilangnya 13 aktivis, bahkan sampai saat ini belum juga ada yang mendapatkan petunjuknya. Mengingatkan para pembacanya akan era-era reformasi di tahun 1998 yang bernas akan kepahitan dan kekejaman bagi para pembela rakyat. Leila selaku penulis memang menegaskan bahwa novel ini hanya historical fiction, tetapi ia menulis berdasarkan pada fakta yang ada. <br><br>Novel ini dikemas dengan tema mengenai kemanusiaan pada era Orde Baru. Visualisasi karakter dalam novel yang tampak nyata. Bersifat edukatif, sehingga pembaca mendapatkan pengetahuan mengenai sejarah. Namun, alur maju mundur yang digunakan dalam novel ini membuat pembaca yang belum terbiasa cenderung kesulitan. Dibutuhkan focus dan pemahaman secara seksama supaya dapat mengikuti alur cerita dengan baik.<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2024 OpenBooks. All rights reserved.</p>
+        </footer>
+        <script>
+            function logout() {
+                sessionStorage.setItem('isLogin', 'false');
+                window.location.href = '/index.html';
+            }
+        </script>
+    </body>
+</html>

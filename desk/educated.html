@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>link library</title>
+        <link rel="stylesheet" href="styles.css">
+        <script>
+            window.onload = function() {
+            if (sessionStorage.getItem('isLogin') !== 'true') {
+                window.location.href = '/index.html';
+            }
+        };
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <div class="navbar">
+                    <div class="logo"><a href="/home/index.html">OpenBooks</a></div>
+                    <div class="bar">
+                        <a href="/home/index.html">HOME</a>
+                        <a href="/library/index.html">LIBRARY</a>
+                        <a href="/about/index.html">ABOUT</a>
+                    </div>
+                    <div class="user">
+                        <img src="/assets/user.png">
+                        <a>HALO (User)</a>
+                        <a href="/index.html">LOGOUT</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="balik">
+            <a href="/library/index.html">< Back</a>
+        </div>
+        <div class="konten">
+            <div class="gambar">
+                <img src="/assets/educated.jpg" class="buku">
+                <div class="tombol">
+                    <a href="https://issuhub.com/view/index/41820?page=3" class="baca" target="_blank"><img src="/assets/buku icon.png">Baca</a>
+                    <a href="https://shopee.co.id/Educated-(Terdidik)-i.63842097.3384920233?sp_atk=fbcb42aa-5660-4743-90af-e432d34b42e7&xptdk=fbcb42aa-5660-4743-90af-e432d34b42e7" class="beli" target="_blank"><img src="/assets/cart.png">Link Beli</a>
+                </div>
+            </div>
+            <div class="tulisan">
+                <div class="judul">
+                    <h1>Educated</h1>
+                </div>
+                <div class="creator">
+                    <h3>Tara Westover</h3>
+                </div>
+                <div class="isi">
+                    <h4>Detail Buku :</h4>
+                    <p>
+                        Judul: Educated<br>
+                        Genre: Biografi <br>
+                        Penulis: Tara Westover<br>
+                        Penerbit: Gramedia Pustaka Utama<br>
+                        Penerjemah: Berkat Setio<br>
+                        Tahun Terbit: 2021<br>
+                        Jumlah Halaman: 499 halaman <br>
+                        <br>
+                    </p>
+                    <h4>Sinopsis :</h4>
+                    <p class="sinopsis">
+                        Educated, buku memoar ini memuat kisah Tara dari semasa kecil hingga dewasa. Tara menjalani masa kecilnya dengan banyak pertanyaan sekaligus merasa hidupnya dibayangi banyak keterbatasan. Ayahnya tidak percaya pada pemerintah, juga tidak percaya pada dokter. Tara dan saudara-saudaranya pun tidak diizinkan untuk bersekolah. Tara hidup dalam "kebenaran-kebenaran" hasil doktrin ayahnya. Tak hanya itu saja, Tara pun mengalami perundungan yang dilakukan oleh kakaknya sendiri. Bukannya mendapat perlindungan, Tara malah makin merasa tak berdaya. Sampai ketika salah satu kakak Tara yang lain memberanikan diri untuk pergi dari rumah dan berkuliah, Tara menemukan dunia yang lain. Dunia yang jauh lebih luas dari kesehariannya bersama keluarganya. <br><br>Ditulis dengan narasi yang mengalir dan pernyataan-pernyataan yang jujur. Pengalaman psikologis dan kekerasan yang dialami Tara pun diutarakan dengan begitu gamblang, sehingga para pembaca yang memiliki sensitivitas terhadap kekerasan mungkin perlu lebih menyiapkan diri lebih baik lagi sebelum membaca buku ini. <br><br>Membaca bab demi bab buku ini akan membuat kita terus penasaran. Kita penasaran dengan apa yang akan dilakukan oleh Tara. Penasaran pula dengan respons keluarganya saat Tara mengambil keputusan besar dalam hidup. Serta, makin penasaran pula dengan bagaimana seorang Tara tumbuh menjadi perempuan terdidik setelah melalui proses dan mengalami banyak pengalaman traumatis semasa kecil.<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2024 OpenBooks. All rights reserved.</p>
+        </footer>
+        <script>
+            function logout() {
+                sessionStorage.setItem('isLogin', 'false');
+                window.location.href = '/index.html';
+            }
+        </script>
+    </body>
+</html>

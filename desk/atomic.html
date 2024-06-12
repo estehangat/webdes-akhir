@@ -3,6 +3,13 @@
     <head>
         <title>link library</title>
         <link rel="stylesheet" href="styles.css">
+        <script>
+            window.onload = function() {
+            if (sessionStorage.getItem('isLogin') !== 'true') {
+                window.location.href = '/index.html';
+            }
+        };
+        </script>
     </head>
     <body>
         <header>
@@ -55,7 +62,7 @@
                         <br>
                     </p>
                     <h4>Sinopsis :</h4>
-                    <p>
+                    <p class="sinopsis">
                         "Atomic Habits: Tiny Changes, Remarkable Results" adalah
                         panduan yang revolusioner tentang bagaimana melakukan
                         perubahan kecil yang dapat memberikan hasil yang luar biasa.
@@ -83,5 +90,11 @@
         <footer>
             <p>&copy; 2024 OpenBooks. All rights reserved.</p>
         </footer>
+        <script>
+            function logout() {
+                sessionStorage.setItem('isLogin', 'false');
+                window.location.href = '/index.html';
+            }
+        </script>
     </body>
 </html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>link library</title>
+        <link rel="stylesheet" href="styles.css">
+        <script>
+            window.onload = function() {
+            if (sessionStorage.getItem('isLogin') !== 'true') {
+                window.location.href = '/index.html';
+            }
+        };
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <div class="navbar">
+                    <div class="logo"><a href="/home/index.html">OpenBooks</a></div>
+                    <div class="bar">
+                        <a href="/home/index.html">HOME</a>
+                        <a href="/library/index.html">LIBRARY</a>
+                        <a href="/about/index.html">ABOUT</a>
+                    </div>
+                    <div class="user">
+                        <img src="/assets/user.png">
+                        <a>HALO (User)</a>
+                        <a href="/index.html">LOGOUT</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="balik">
+            <a href="/library/index.html">< Back</a>
+        </div>
+        <div class="konten">
+            <div class="gambar">
+                <img src="/assets/filosofi.jpg" class="buku">
+                <div class="tombol">
+                    <a href="https://fliphtml5.com/sobgc/hewn/basic" class="baca" target="_blank"><img src="/assets/buku icon.png">Baca</a>
+                    <a href="https://shopee.co.id/Filosofi-Teras-(New-Cover)-(Henry-Manampiring)-i.63842097.22887476791?sp_atk=2af25806-e14d-4011-809a-2034f2af4ac3&xptdk=2af25806-e14d-4011-809a-2034f2af4ac3" class="beli" target="_blank"><img src="/assets/cart.png">Link Beli</a>
+                </div>
+            </div>
+            <div class="tulisan">
+                <div class="judul">
+                    <h1>Filosofi Teras</h1>
+                </div>
+                <div class="creator">
+                    <h3>Henry Manampiring</h3>
+                </div>
+                <div class="isi">
+                    <h4>Detail Buku :</h4>
+                    <p>
+                        Judul: Filosofi Teras<br>
+                        Genre: Self Improvement, Filsafat<br>
+                        Penulis: Henry Manampiring<br>
+                        Penerbit: Kompas Gramedia<br>
+                        Penerjemah: -<br>
+                        Tahun Terbit: 2018<br>
+                        Jumlah Halaman: 344 halaman<br>
+                        <br>
+                    </p>
+                    <h4>Sinopsis :</h4>
+                    <p class="sinopsis">
+                        "Filosofi Teras" adalah sebuah buku yang memperkenalkan pembaca kepada Stoisisme, sebuah aliran filsafat kuno yang berasal dari Yunani dan Romawi. Ditulis oleh Henry Manampiring, buku ini bertujuan untuk menjelaskan prinsip-prinsip Stoisisme dan bagaimana filosofi tersebut dapat diterapkan dalam kehidupan modern untuk mencapai ketenangan batin dan kebahagiaan. <br><br>Dalam buku ini, Manampiring menjelaskan konsep-konsep utama Stoisisme seperti dikotomi kendali (memfokuskan diri pada hal-hal yang bisa kita kendalikan dan melepaskan hal-hal yang tidak bisa kita kendalikan), hidup sesuai dengan kebajikan, serta pentingnya mengembangkan kebijaksanaan, keberanian, keadilan, dan pengendalian diri. Penulis juga membahas tokoh-tokoh penting dalam Stoisisme seperti Seneca, Epictetus, dan Marcus Aurelius. <br><br>"Filosofi Teras" dilengkapi dengan contoh-contoh nyata, anekdot pribadi, serta tips praktis yang membuat ajaran Stoisisme lebih mudah dipahami dan diterapkan oleh pembaca dari berbagai latar belakang. Buku ini juga mengajak pembaca untuk melakukan refleksi diri dan mengembangkan ketahanan mental dalam menghadapi berbagai tantangan hidup.<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2024 OpenBooks. All rights reserved.</p>
+        </footer>
+        <script>
+            function logout() {
+                sessionStorage.setItem('isLogin', 'false');
+                window.location.href = '/index.html';
+            }
+        </script>
+    </body>
+</html>
